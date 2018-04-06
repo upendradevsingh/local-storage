@@ -122,6 +122,6 @@ Storage.prototype.isTTLExpired = function isTTLExpired(expirationTime) {
             return ClassToBeInstaintiated;
         });
     } else {
-        window.JBStorage = ClassToBeInstaintiated;
+        window.__browser_storage__ = ClassToBeInstaintiated;
     }
 }(Storage));
